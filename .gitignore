@@ -1,0 +1,31 @@
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+client/.env
+server/.env
+
+# Private cryptographic keys
+**/*private*.pem
+**/*private*.key
+**/center-private.pem
+**/signing-private.pem
+
+# Build output
+client/dist/
+dist/
+coverage/
+
+# Logs and OS files
+*.log
+.DS_Store
+
+# Postman workspace data that may contain secrets
+.postman/
+postman/globals/
